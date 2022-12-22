@@ -1,0 +1,26 @@
+/* .searchWrapper {
+  position: relative;
+  width: 100%;
+
+}
+.searchWrapper span {
+  position: absolute;
+  left: 10px;
+  top: 0;
+} */
+
+.searchInput {
+  align-self: flex-start;
+  flex-basis: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.73);
+  width: 100%;
+  border-radius: 4px 0px 0px 4px;
+
+  padding-block: 0.35em;
+  font-size: 1rem;
+  padding-inline: 0.5em;
+}
+
+.searchInput:focus {
+  border: 1.25px solid rgba(0, 0, 0, 1);
+}

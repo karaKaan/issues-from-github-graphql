@@ -1,0 +1,51 @@
+.wrapper {
+  border: 1px solid black;
+  border-radius: 0px 4px 4px 0px;
+  position: relative;
+  flex-basis: 20%;
+  padding-block: 0.63em;
+  padding-inline: 1em;
+}
+.wrapper:hover {
+  cursor: pointer;
+}
+
+
+.optionsWrapper {
+  max-height: 0;
+  transition: max-height ease 500ms;
+  margin-top: 0.25em;
+  display: flex;
+  flex-direction: column;
+}
+.active {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  margin-top: 0.25em;
+
+  transition: max-height ease 500ms;
+}
+.optionsWrapper option {
+  visibility: hidden;
+  transition: visibility ease 250ms 100ms;
+}
+.active option {
+  visibility: visible;
+  transition: visibility ease 250ms;
+}
+
+.wrapper span,
+.dropdownItem {
+  font-size: 1rem;
+  padding-inline: 2em;
+  padding-block: 1em;
+}
+.dropdownItem {
+  transition: background ease 500ms;
+}
+.dropdownItem:hover {
+  background: #eee;
+  cursor: pointer;
+  transition: background ease 200ms;
+}

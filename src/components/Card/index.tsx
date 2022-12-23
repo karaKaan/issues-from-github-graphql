@@ -13,7 +13,6 @@ type Props = {
   };
   date: string;
   state: "OPEN" | "CLOSED";
-  onMouseEnter?: () => void;
 };
 
 export const Card = ({
@@ -23,13 +22,11 @@ export const Card = ({
   img,
   date,
   state,
-  onMouseEnter,
 }: Props) => {
   return (
     <Link
       className={styles.linkWrapper}
       to={`/issue/${id}`}
-      onMouseEnter={onMouseEnter}
     >
       <div className={styles.cardWrapper}>
         {state === "OPEN" ? (
